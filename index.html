@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Table and Form</title>
+  <!-- Include Bootstrap CSS from the locally installed package -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <!-- Bootstrap Table -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Data Column 1</th>
+          <th scope="col">Data Column 2</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Table rows will be added dynamically -->
+      </tbody>
+    </table>
+
+    <!-- Bootstrap Form -->
+    <form id="dataForm" class="mt-3">
+      <div class="mb-3">
+        <!-- Input for Data Column 1 -->
+        <label for="dataInput1" class="form-label">Data Column 1</label>
+        <input type="text" class="form-control" id="dataInput1" required>
+      </div>
+      <div class="mb-3">
+        <!-- Input for Data Column 2 -->
+        <label for="dataInput2" class="form-label">Data Column 2</label>
+        <input type="text" class="form-control" id="dataInput2" required>
+      </div>
+      <!-- Submit button to add a new row to the table -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Include custom JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
